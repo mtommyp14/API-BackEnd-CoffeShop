@@ -6,7 +6,20 @@ const db = require('../Configs/db');
 const histories = {};
 
 histories.get = () => new Promise((resolve, reject) => {
-  db.query('SELECT * FROM public.dbhistory ORDER BY id_history ASC')
+  db.query(`
+  SELECT 
+  id_history,
+  idproduct,
+  name,
+  price,
+  cashier,
+  ppn,
+  totalprice,
+  date
+  FROM dbhistory
+  INNER JOIN dbproduct ON dbhistory.idproduct = dbproduct.id
+  ORDER BY id_history ASC 
+  `)
     .then((res) => {
       if (res.rows.length === 0) {
         resolve({
@@ -22,7 +35,10 @@ histories.get = () => new Promise((resolve, reject) => {
 });
 
 histories.addHistories = (data) => new Promise((resolve, reject) => {
-  db.query(`INSERT INTO public.dbhistory ( cashier, ppn, totalprice, date, idproduct) VALUES ('${data.cashier}', ${data.ppn}, ${data.totalprice}, '${data.date}', idproduct = ${data.idproduct})`)
+  db.query(`INSERT INTO public.dbhistory ( cashier, ppn, totalprice, date, idproduct) 
+  VALUES ('${data.cashier}', ${data.ppn}, ${data.totalprice}, '${data.date}', ${data.idproduct})
+  
+  `)
     .then((res) => {
       resolve(data);
     })
