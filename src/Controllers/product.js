@@ -33,7 +33,6 @@ products.addFind = async (req, res) => {
 };
 
 products.search = async (req, res) => {
-  // console.log(req.query);
   try {
     const result = await model.search(req.query.search);
     return respon(res, 200, result);

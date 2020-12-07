@@ -83,7 +83,7 @@ products.search = (name) => new Promise((resolve, reject) => {
         FROM public.dbproduct 
         LEFT JOIN public.dbcategory 
         ON dbcategory.id_category = dbproduct.idcategory 
-        WHERE dbproduct.*
+        WHERE dbproduct.name
           ILIKE '%${name}%'
       `,
   )
