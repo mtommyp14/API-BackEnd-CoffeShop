@@ -14,8 +14,7 @@ categories.get = () => new Promise((resolve, reject) => {
       }
     })
     .catch((err) => {
-      // reject(err);
-      console.log(err);
+      reject(err);
     });
 });
 

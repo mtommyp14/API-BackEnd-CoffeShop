@@ -1,3 +1,6 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-unused-expressions */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 const db = require('../Configs/db');
@@ -41,7 +44,7 @@ products.updateProduct = (data) => new Promise((resolve, reject) => {
 products.deleteProduct = (id) => new Promise((resolve, reject) => {
   db.query(`DELETE FROM public.dbproduct WHERE id= ${id} `)
     .then((res) => {
-      resolve(data);
+      resolve(res.rows);
     })
     .catch((err) => {
       reject(err);
@@ -65,6 +68,34 @@ products.addFind = (orderby = '', sort = 'ASC') => new Promise((resolve, reject)
     .catch((err) => {
       reject(err);
       // console.log(err);
+    });
+});
+
+products.search = (name) => new Promise((resolve, reject) => {
+  db.query(
+    `
+        SELECT dbproduct.id,
+        dbproduct.name, 
+        dbproduct.price, 
+        dbproduct.image, 
+        dbcategory.id_category,
+        dbcategory.type
+        FROM public.dbproduct 
+        LEFT JOIN public.dbcategory 
+        ON dbcategory.id_category = dbproduct.idcategory 
+        WHERE dbproduct.*
+          ILIKE '%${name}%'
+      `,
+  )
+    .then((res) => {
+      if (res.rows.length == 0) {
+        resolve('tidak ada data di table product');
+      } else {
+        resolve(res.rows);
+      }
+    })
+    .catch((err) => {
+      reject(err);
     });
 });
 

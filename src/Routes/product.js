@@ -9,5 +9,6 @@ routes.post('/', ctrl.add);
 routes.put('/', ctrl.update);
 routes.delete('/:id', ctrl.delete);
 routes.get('/find', ctrl.addFind);
+routes.get('/search', ctrl.search);
 
 module.exports = routes;

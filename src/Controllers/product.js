@@ -32,6 +32,16 @@ products.addFind = async (req, res) => {
   }
 };
 
+products.search = async (req, res) => {
+  // console.log(req.query);
+  try {
+    const result = await model.search(req.query.search);
+    return respon(res, 200, result);
+  } catch (error) {
+    return respon(res, 200, error);
+  }
+};
+
 products.update = async (req, res) => {
   try {
     const result = await model.updateProduct(req.body);
@@ -44,9 +54,9 @@ products.update = async (req, res) => {
 products.delete = async (req, res) => {
   try {
     const result = await model.deleteProduct(req.params.id);
-    return res.status(200).json(result);
+    return respon(res, 201, result);
   } catch (error) {
-    return res.status(401).json(error);
+    return respon(res, 200, error);
   }
 };
 
