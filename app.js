@@ -23,6 +23,6 @@ db.connect()
     console.log(err);
   });
 
-server.listen(8000, () => {
+server.listen(3000, () => {
   console.log('Server Run');
 });

@@ -5,7 +5,7 @@ const db = require('../Configs/db');
 const categories = {};
 
 categories.get = () => new Promise((resolve, reject) => {
-  db.query('SELECT * FROM public.dbcategory ORDER BY id ASC')
+  db.query('SELECT * FROM public.dbcategory ORDER BY id_category ASC')
     .then((res) => {
       if (res.rows.length === 0) {
         resolve({ msg: 'Data Kosong' });
@@ -14,7 +14,8 @@ categories.get = () => new Promise((resolve, reject) => {
       }
     })
     .catch((err) => {
-      reject(err);
+      // reject(err);
+      console.log(err);
     });
 });
 
