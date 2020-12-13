@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 require('dotenv/config');
 const express = require('express');
+const cors = require('cors');
 
 const server = express();
 const bodyPars = require('body-parser');
@@ -12,6 +13,7 @@ const db = require('./src/Configs/db');
 server.use(bodyPars.urlencoded({ extended: false }));
 server.use(bodyPars.json());
 server.use(morgan('dev'));
+server.use(cors());
 server.use(routes);
 
 db.connect()
@@ -23,6 +25,6 @@ db.connect()
     console.log(err);
   });
 
-server.listen(3000, () => {
+server.listen(4000, () => {
   console.log('Server Run');
 });

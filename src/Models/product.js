@@ -8,7 +8,10 @@ const db = require('../Configs/db');
 const products = {};
 
 products.get = () => new Promise((resolve, reject) => {
-  db.query('SELECT * FROM public.dbproduct ORDER BY id ASC')
+  db.query(`SELECT id, idcategory, name, price, image, type
+  FROM dbproduct
+  INNER JOIN dbcategory ON dbproduct.idcategory = dbcategory.id_category
+  ORDER BY id ASC`)
     .then((res) => {
       if (res.rows.length === 0) {
         resolve({ msg: 'Data Kosong' });
@@ -24,7 +27,7 @@ products.get = () => new Promise((resolve, reject) => {
 products.addProduct = (data) => new Promise((resolve, reject) => {
   db.query(`INSERT INTO public.dbproduct(name, price, image, idcategory) VALUES ('${data.name}' , ${data.price}, '${data.image}', ${data.idcategory})`)
     .then((res) => {
-      resolve(data);
+      resolve(`${data.name} Sudah di tambahkan`);
     })
     .catch((err) => {
       reject(err);
