@@ -1,8 +1,3 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-restricted-globals */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 const db = require('../Configs/db');
 
 const products = {};
