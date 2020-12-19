@@ -18,21 +18,31 @@ const option = {
             }),
             format.errors({ stack: true }),
             format.splat(),
-            format.json()
+            format.json(),
+            format.colorize()
         ),
         handleExceptions: true,
         json: true,
         maxsize: 5242880,
         maxFiles: 5,
-        colorize: false,
+        colorize: true,
     },
-
+    
+    addColors:{
+      error: 'red',
+      warn: 'yellow',
+      info: 'cyan',
+      debug: 'green'
+    }
+    ,
     console:{
         level: 'debug',
         handleExceptions: true,
         json: false,
         colorize: true,
     }
+
+    
 }
 
 
@@ -53,6 +63,9 @@ logger.stream = {
     write: function(message, encoding){
         logger.info(message);
     }
+    
 }
+
+
 
 module.exports = logger

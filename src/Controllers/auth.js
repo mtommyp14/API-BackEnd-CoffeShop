@@ -11,23 +11,23 @@ class Auth {
             const passUser = req.body.password
 
             if(passDB.length <= 0){
-                logger.info(res)
+                logger.info("Post data email salah", passDB)
                 return respon(res, 200, {msg: "Email anda tidak terdaftar"})
             }
 
             const cek = await bcr.compare(passUser, passDB[0].password)
             if (cek) {  
-                logger.info(cek)
                 const result = await this.setToken(passDB[0].email, passDB[0].role)
+                logger.warn("Post data berhasil, data cocok")
                 return respon(res, 200, result)
             } else {
-                logger.info(res)
+                logger.info("Post data error Email benar dan password salah", cek)
                 return respon(res, 200, {
                     msg: "Check Password Anda"
                 })
             }
         } catch (error) {
-            logger.info(error);
+            logger.warn("Error from login Auth", error);
             return respon(res, 500, error)
         }
     }
@@ -44,10 +44,10 @@ class Auth {
                 msg: "Token Created",
                 token: token
             }
-            logger.info(result)
+            logger.info("Token has created", result)
             return result
         } catch (error) {
-            logger.info(error)
+            logger.info("Token was error from setToken" ,error)
             throw error
         }
     }

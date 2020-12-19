@@ -30,6 +30,6 @@ redis.redisCheck()
   .then(res=>{logger.info(res);})
   .catch(err=>{logger.info(err);})
 
-server.listen(8300, () => {
+server.listen(9000, () => {
   console.log('Server Run');
 });

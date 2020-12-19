@@ -5,7 +5,10 @@ const validate = require('../Middleware/validate');
 const upload = require('../Middleware/multer')
 const cache = require('../Middleware/cache')
 
-routes.get('/', validate(["users","admin"]), cache, ctrl.get);
+routes.get('/', 
+// validate(["users","admin"]),
+ cache, ctrl.get);
+ 
 routes.post('/', upload.single("image"), ctrl.add);
 routes.put('/', validate(["admin"]), ctrl.update);
 routes.delete('/:id', validate(["admin"]), ctrl.delete);

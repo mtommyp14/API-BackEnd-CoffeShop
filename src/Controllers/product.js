@@ -12,7 +12,7 @@ products.get = async (req, res) => {
     const saveRedis = JSON.stringify(result)
     redisdb.setex("products", 60, saveRedis)
     console.log("dari PostGres");
-    logger.info(req);
+    logger.info('Get data process', res);
     return respon(res, 200, result);
   } catch (error) {
     logger.error(error)

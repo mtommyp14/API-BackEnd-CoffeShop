@@ -1,5 +1,6 @@
 const respon = require('../Helpers/respon')
 const jwt = require('jsonwebtoken')
+const logger = require('../Configs/winston')
 
 const checkToken = (role)=>{
     return function(req, res, next){
@@ -10,6 +11,7 @@ const checkToken = (role)=>{
         const result ={
             msg: "Login dulu"
         }
+        
         return respon(res, 401, result)
     }
 
@@ -27,6 +29,7 @@ const checkToken = (role)=>{
         if(isAccess){
             next()
         }else{
+            logger.info("Get data was rejected cause not your role ", isAccess)
             return respon(res, 401, {msg: "not your role"})
         }
         
