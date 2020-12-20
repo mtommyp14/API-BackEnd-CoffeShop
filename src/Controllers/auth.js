@@ -18,7 +18,7 @@ class Auth {
             const cek = await bcr.compare(passUser, passDB[0].password)
             if (cek) {  
                 const result = await this.setToken(passDB[0].email, passDB[0].role)
-                logger.warn("Post data berhasil, data cocok")
+                logger.info("Post data berhasil, data cocok")
                 return respon(res, 200, result)
             } else {
                 logger.info("Post data error Email benar dan password salah", cek)
@@ -31,6 +31,8 @@ class Auth {
             return respon(res, 500, error)
         }
     }
+
+    
 
     setToken = async(email, role) =>{
         try {
