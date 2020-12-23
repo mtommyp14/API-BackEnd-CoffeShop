@@ -46,6 +46,37 @@ class Users {
         });
     });
   }
+
+
+  async updateUsers(data) {
+    return new Promise((resolve, reject) => {
+      db.query(`UPDATE public.dbusers 
+      SET email = '${data.email}', password = '${data.password}', name = '${data.name}', role = '${data.role}'
+      WHERE id_user = ${data.id_user} 
+      `)
+        .then((res) => {
+          resolve(data);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    })
+  }
+
+  async deleteUsers(id){
+    return new Promise((resolve, reject)=>{
+      db.query(`DELETE FROM public.dbusers WHERE id_user = ${id}`)
+      .then((res)=>{
+        resolve(`Id: ${id} has deleted`);
+      })
+      .catch((err)=>{
+        reject(err)
+      })
+    })
+  }
 }
+
+
+
 
 module.exports = new Users();

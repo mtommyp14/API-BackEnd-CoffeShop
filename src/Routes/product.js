@@ -9,25 +9,24 @@ routes.get('/',
 // validate(["users","admin"]),
  cache, ctrl.get);
  
-routes.post('/', 
-// upload.single("image"), 
-ctrl.add);
-
-
-routes.put('/',
+routes.post('/',
 //  validate(["admin"]), 
- ctrl.update);
+ upload.single("image"), ctrl.add);
 
-routes.delete('/:id',
-//  validate(["admin"]), 
- ctrl.delete);
+routes.put('/',  
+// validate(["admin"]), 
+upload.single("image"),  ctrl.update);
 
-routes.get('/find',
-//  validate(["users","admin"]), 
+routes.delete('/:id', 
+// validate(["admin"]),  
+ctrl.delete);
+
+routes.get('/find', 
+// validate(["users","admin"]), 
  ctrl.addFind);
 
-routes.get('/search', 
-// validate(["users","admin"]),
+routes.get('/search',
+//  validate(["users","admin"]), 
  ctrl.search);
 
 module.exports = routes;

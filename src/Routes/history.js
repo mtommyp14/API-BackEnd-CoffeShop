@@ -3,10 +3,20 @@ const express = require('express');
 const routes = express.Router();
 const ctrl = require('../Controllers/history');
 
-// history/
-routes.get('/', ctrl.get);
-routes.post('/', ctrl.add);
-routes.put('/', ctrl.update);
-routes.delete('/:id', ctrl.delete);
+routes.get('/', 
+// validate(["users","admin"]), 
+ctrl.get);
+
+routes.post('/', 
+// validate(["users","admin"]), 
+ctrl.add);
+
+routes.put('/', 
+// validate(["users","admin"]), 
+ctrl.update);
+
+routes.delete('/:id', 
+// validate(["users","admin"]), 
+ctrl.delete);
 
 module.exports = routes;

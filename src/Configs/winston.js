@@ -14,7 +14,7 @@ const option = {
         handleExceptions: true,
         json: false,
         colorize: true,
-        maxsize: 5242,
+        maxsize: 5242213,
         maxFiles: 5,
     },
 

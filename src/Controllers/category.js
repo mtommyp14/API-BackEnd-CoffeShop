@@ -34,6 +34,7 @@ categories.update = async (req, res) => {
 };
 
 categories.delete = async (req, res) => {
+  console.log("masuk");
   try {
     const result = await model.deleteCategories(req.params.id);
     return res.status(200).json(result);

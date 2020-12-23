@@ -3,10 +3,20 @@ const express = require('express');
 const routes = express.Router();
 const ctrl = require('../Controllers/category');
 
-// product/
-routes.get('/', ctrl.get);
-routes.post('/', ctrl.add);
-routes.put('/', ctrl.update);
-routes.delete('/:id', ctrl.delete);
+routes.get('/', 
+// validate(["admin"]), 
+ ctrl.get);
+
+routes.post('/', 
+//  validate(["admin"]),
+  ctrl.add);
+
+routes.put('/', 
+//  validate(["admin"]), 
+ ctrl.update);
+
+routes.delete('/:id',
+//  validate(["admin"]), 
+ ctrl.delete);
 
 module.exports = routes;
