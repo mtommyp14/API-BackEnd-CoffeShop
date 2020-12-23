@@ -31,5 +31,5 @@ redis.redisCheck()
   .catch(err=>{logger.info(err);})
 
 server.listen(9000, () => {
-  console.log('Server Run');
+  logger.info('Server Run');
 });

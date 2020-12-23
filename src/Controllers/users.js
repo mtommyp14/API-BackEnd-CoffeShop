@@ -2,6 +2,7 @@
 const model = require('../Models/users');
 const respon = require('../Helpers/respon');
 const hashPassword = require('../Helpers/hash');
+const { log } = require('winston');
 
 class Users {
   async add(req, res) {
@@ -31,6 +32,24 @@ class Users {
       return respon(res, 200, result);
     } catch (error) {
       return respon(res, 500, error);
+    }
+  }
+
+  async updateUser(req, res){
+    try {
+      const result = await model.updateUsers(req.body);
+      return respon(res, 200, result)
+    } catch (error) {
+      return respon(res, 500, error)
+    }
+  }
+
+  async deleteUser(req, res){
+    try {
+      const result = await model.deleteUsers(req.params.id);
+      return res.status(200).json(result);
+    } catch (error) {
+      return res.status(401).json(error);
     }
   }
 }

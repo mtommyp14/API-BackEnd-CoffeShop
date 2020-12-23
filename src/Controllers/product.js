@@ -23,7 +23,7 @@ products.get = async (req, res) => {
 
 products.add = async (req, res) => {
   try {
-    console.logger(req);
+    logger.info(req);
     if(req.file === undefined){
       return respon(res, 500, {msg: "Image harus diisi"})
     }
@@ -36,6 +36,25 @@ products.add = async (req, res) => {
     return respon(res, 200, error);
   }
 };
+
+products.update = async (req, res) => {
+  // console.log("masuk");
+  try {
+    if(req.file === undefined){
+      // console.log("masuk try if");
+      return respon(res, 500, {msg: "Image harus diisi"})
+    }
+    const image_url = await cloudUpload(req.file.path)
+    const result = await model.updateProduct(req.body, image_url);
+    redisdb.del("products")
+    return respon(res, 201, result);
+  } catch (error) {
+    // logger.error(error)
+    return respon(res, 200, error);
+  }
+};
+
+
 
 products.addFind = async (req, res) => {
   try {
@@ -60,16 +79,6 @@ products.search = async (req, res) => {
   }
 };
 
-products.update = async (req, res) => {
-  try {
-    const result = await model.updateProduct(req.body);
-    redisdb.del("products")
-    return respon(res, 201, result);
-  } catch (error) {
-    logger.error(error)
-    return respon(res, 200, error);
-  }
-};
 
 products.delete = async (req, res) => {
   try {
