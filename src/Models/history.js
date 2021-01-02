@@ -10,8 +10,8 @@ histories.get = () => new Promise((resolve, reject) => {
   SELECT 
   id_history,
   idproduct,
-  name,
-  price,
+  invoice
+  namehis,
   cashier,
   ppn,
   totalprice,
@@ -36,7 +36,7 @@ histories.get = () => new Promise((resolve, reject) => {
 
 histories.addHistories = (data) => new Promise((resolve, reject) => {
   db.query(`INSERT INTO public.dbhistory ( cashier, ppn, totalprice, date, idproduct) 
-  VALUES ('${data.cashier}', ${data.ppn}, ${data.totalprice}, '${data.date}', ${data.idproduct})
+  VALUES ( ${data.invoice}, '${data.namehis}', '${data.cashier}', ${data.ppn}, ${data.totalprice}, '${data.date}', ${data.idproduct})
   
   `)
     .then((res) => {
@@ -49,7 +49,7 @@ histories.addHistories = (data) => new Promise((resolve, reject) => {
 
 histories.updateHistories = (data) => new Promise((resolve, reject) => {
   db.query(`UPDATE public.dbhistory 
-  SET cashier = '${data.cashier}', ppn = ${data.ppn}, totalprice = ${data.totalprice}, date = '${data.date}', idproduct = ${data.idproduct} 
+  SET invoice = ${data.invoice}, namehis = '${data.namehis}', cashier = '${data.cashier}', ppn = ${data.ppn}, totalprice = ${data.totalprice}, date = '${data.date}', idproduct = ${data.idproduct} 
   WHERE id_history = ${data.id_history} 
   `)
     .then((res) => {

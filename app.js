@@ -29,7 +29,7 @@ db.connect()
 redis.redisCheck()
   .then(res=>{logger.info(res);})
   .catch(err=>{logger.info(err);})
-
-server.listen(9000, () => {
+  
+server.listen(8000, () => {
   logger.info('Server Run');
 });
