@@ -10,23 +10,23 @@ routes.get('/',
  cache, ctrl.get);
  
 routes.post('/',
-//  validate(["admin"]), 
+ validate(["admin"]), 
  upload.single("image"), ctrl.add);
 
 routes.put('/',  
-// validate(["admin"]), 
+validate(["admin"]), 
 upload.single("image"),  ctrl.update);
 
 routes.delete('/:id', 
-// validate(["admin"]),  
+validate(["admin"]),  
 ctrl.delete);
 
 routes.get('/find', 
-// validate(["users","admin"]), 
+validate(["users","admin"]), 
  ctrl.addFind);
 
 routes.get('/search',
-//  validate(["users","admin"]), 
+ validate(["users","admin"]), 
  ctrl.search);
 
 module.exports = routes;

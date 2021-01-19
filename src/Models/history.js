@@ -10,8 +10,7 @@ histories.get = () => new Promise((resolve, reject) => {
   SELECT 
   id_history,
   idproduct,
-  invoice
-  namehis,
+
   cashier,
   ppn,
   totalprice,

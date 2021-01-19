@@ -83,6 +83,7 @@ products.search = async (req, res) => {
 products.delete = async (req, res) => {
   try {
     const result = await model.deleteProduct(req.params.id);
+    redisdb.del("products")
     return respon(res, 201, result);
   } catch (error) {
     logger.error(error)

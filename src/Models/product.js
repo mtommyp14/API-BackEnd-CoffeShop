@@ -25,6 +25,7 @@ products.addProduct = (data) => new Promise((resolve, reject) => {
       resolve(`${data.name} Sudah di tambahkan`);
     })
     .catch((err) => {
+      console.log(err);
       reject(err);
     });
 });

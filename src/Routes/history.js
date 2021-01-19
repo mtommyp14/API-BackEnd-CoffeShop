@@ -1,4 +1,5 @@
 const express = require('express');
+const validate = require('../Middleware/validate');
 
 const routes = express.Router();
 const ctrl = require('../Controllers/history');
