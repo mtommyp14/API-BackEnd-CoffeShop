@@ -35,7 +35,7 @@ pipeline{
             steps{
                 script{
                     builder.inside{
-                        sh 'Echo Passed'
+                        sh 'echo passed'
                     }
                 }
             }
