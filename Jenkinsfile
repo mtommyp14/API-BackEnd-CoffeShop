@@ -1,42 +1,51 @@
+def dockerhub = "mtommyp14/back"
+def images_name = "${dockerhub}:${BRANCH_NAME}"
+def builder 
 
 pipeline{
     
     agent any
 
-    parameters{
-        string(name: 'DOKERHUB', defaultValue: 'Hallo Params', description: 'blasalavbla')
-        booleanParam(name: 'RUNTEST', defaultValue: 'false', description: 'lalalal')
-        choice(name: 'DEPLOY', choices: ["Yes", "No"], description: 'lalalal')
-    }
+    // parameters{
+    //     string(name: 'DOKERHUB', defaultValue: 'Hallo Params', description: 'blasalavbla')
+    //     booleanParam(name: 'RUNTEST', defaultValue: 'false', description: 'lalalal')
+    //     choice(name: 'DEPLOY', choices: ["Yes", "No"], description: 'lalalal')
+    // }
     
     stages{
 
-        stage("Build"){
+        stage("Install dependencies"){
 
             steps{
-                echo "Halo"
+                nodejs("node14 back"){
+                    sh 'npm install'
+                }
             }
         }
 
-        stage("Testing"){
-            when{
-                expression{
-                    params.RUNTEST
-                }
-            }
+        stage("Build Docker"){
             steps{
-                echo "Halo"
+                script{
+                    builder = docker.build("${dockerhub}:${BRANCH_NAME}")
+                }
             }
         }
 
-        stage("Deploy"){
-            when{
-                expression{
-                    params.DEPLOY == "Yes"
+        stage("Testing Image"){
+            steps{
+                script{
+                    builder.inside{
+                        sh 'Echo Passed'
+                    }
                 }
             }
+        }
+
+        stage("Push Image"){
             steps{
-                echo "Halo"
+                script{
+                        builder.push
+                    }
             }
         }
     }
