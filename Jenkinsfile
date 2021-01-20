@@ -44,7 +44,7 @@ pipeline{
         stage("Push Image"){
             steps{
                 script{
-                        builder.push
+                        builder.push()
                     }
             }
         }
