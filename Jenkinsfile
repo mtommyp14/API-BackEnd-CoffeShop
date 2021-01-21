@@ -1,5 +1,5 @@
 def dockerhub = "mtommyp14/back"
-def images_name = "${dockerhub}:${BRANCH_NAME}"
+def images_name = "${dockerhub}"
 def builder 
 
 pipeline{
