@@ -1,5 +1,5 @@
 def dockerhub = "mtommyp14/back"
-def images_name = "${dockerhub}"
+def images_name = "${dockerhub}:${new}"
 def builder 
 
 pipeline{
@@ -26,7 +26,7 @@ pipeline{
         stage("Build Docker"){
             steps{
                 script{
-                    builder = docker.build("${dockerhub}")
+                    builder = docker.build("${dockerhub}:${new}")
                 }
             }
         }
