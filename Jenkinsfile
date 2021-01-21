@@ -26,7 +26,7 @@ pipeline{
         stage("Build Docker"){
             steps{
                 script{
-                    builder = docker.build("${dockerhub}:${BRANCH_NAME}")
+                    builder = docker.build("${dockerhub}")
                 }
             }
         }
