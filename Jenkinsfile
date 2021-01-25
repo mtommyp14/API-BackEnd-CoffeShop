@@ -6,12 +6,6 @@ pipeline{
     
     agent any
 
-    // parameters{
-    //     string(name: 'DOKERHUB', defaultValue: 'Hallo Params', description: 'blasalavbla')
-    //     booleanParam(name: 'RUNTEST', defaultValue: 'false', description: 'lalalal')
-    //     choice(name: 'DEPLOY', choices: ["Yes", "No"], description: 'lalalal')
-    // }
-    
     stages{
 
         stage("Install dependencies"){
@@ -44,8 +38,23 @@ pipeline{
         stage("Push Image"){
             steps{
                 script{
-                        builder.push()
-                    }
+                    sshPublisher(
+                        publishers: [
+                            sshPublisherDesc(
+                                configName: 'backend-server',
+                                verbose: false,
+                                transfers: [
+                                    sshTransfer(
+                                        sourceFiles: 'docker-compose.yml',
+                                        remoteDirectory: 'app',
+                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 7070:9001 ${images_name}",
+                                        execTimeout: 1200000
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+                }
             }
         }
     }
