@@ -92,6 +92,7 @@ pipeline{
                 }
             }
         }
+        
         stage("Push Image Production"){
             when {
                 expression {
