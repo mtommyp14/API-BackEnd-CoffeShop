@@ -14,5 +14,4 @@ routes.use('/api/category', category);
 routes.use('/api/users', users);
 routes.use('/api/auth', auth);
 
-
 module.exports = routes;
