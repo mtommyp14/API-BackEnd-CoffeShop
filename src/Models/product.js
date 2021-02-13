@@ -19,8 +19,8 @@ products.get = () => new Promise((resolve, reject) => {
     });
 });
 
-products.addProduct = (data) => new Promise((resolve, reject) => {
-  db.query(`INSERT INTO public.dbproduct(name, price, image, idcategory) VALUES ('${data.name}' , ${data.price}, '${data.image}', ${data.idcategory})`)
+products.addProduct = (data, image) => new Promise((resolve, reject) => {
+  db.query(`INSERT INTO public.dbproduct(name, price, image, idcategory) VALUES ('${data.name}' , ${data.price}, '${image}', ${data.idcategory})`)
     .then((res) => {
       resolve(`${data.name} Sudah di tambahkan`);
     })
@@ -30,10 +30,12 @@ products.addProduct = (data) => new Promise((resolve, reject) => {
     });
 });
 
-products.updateProduct = (data) => new Promise((resolve, reject) => {
-  db.query(`UPDATE public.dbproduct SET name='${data.name}', price= ${data.price}, image= '${data.image}', idcategory = ${data.idcategory} WHERE id= ${data.id} `)
+products.updateProduct = (data, image) => new Promise((resolve, reject) => {
+  db.query(`UPDATE public.dbproduct SET name='${data.name}', price= ${data.price}, image= '${image}', idcategory = ${data.idcategory} WHERE id= ${data.id} `)
     .then((res) => {
       resolve(data);
+      console.log(data);
+      console.log(image);
     })
     .catch((err) => {
       reject(err);

@@ -21,7 +21,7 @@ categories.get = () => new Promise((resolve, reject) => {
 categories.addCategories = (data) => new Promise((resolve, reject) => {
   db.query(`INSERT INTO public.dbcategory(type) VALUES ('${data.type}')`)
     .then((res) => {
-      resolve(data);
+      resolve(`${data.type} Sudah di tambahkan`);
     })
     .catch((err) => {
       reject(err);
@@ -39,9 +39,9 @@ categories.updateCategories = (data) => new Promise((resolve, reject) => {
 });
 
 categories.deleteCategories = (id) => new Promise((resolve, reject) => {
-  db.query(`DELETE FROM public.dbcategory WHERE id= ${id} `)
+  db.query(`DELETE FROM public.dbcategory WHERE id_category =${id}`)
     .then((res) => {
-      resolve(data);
+      resolve(res.rows);
     })
     .catch((err) => {
       reject(err);

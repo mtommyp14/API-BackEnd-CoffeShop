@@ -1,6 +1,9 @@
 const categories = {};
 const model = require('../Models/category');
 const respon = require('../Helpers/respon');
+const logger = require('../Configs/winston');
+const { redisdb } = require('../Configs/redis');
+
 
 categories.get = async (req, res) => {
   try {
@@ -34,11 +37,12 @@ categories.update = async (req, res) => {
 };
 
 categories.delete = async (req, res) => {
-  console.log("masuk");
   try {
     const result = await model.deleteCategories(req.params.id);
+    redisdb.del("categories")
     return res.status(200).json(result);
   } catch (error) {
+    logger.error(error)
     return res.status(401).json(error);
   }
 };

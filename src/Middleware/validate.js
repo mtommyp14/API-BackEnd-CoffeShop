@@ -21,8 +21,6 @@ const checkToken = (role)=>{
         }
         role.map(value =>{
             if (value == decode.role){
-                console.log(decode.role);
-                console.log(value);
                 isAccess = true
             }
         })

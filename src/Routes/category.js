@@ -9,15 +9,17 @@ routes.get('/',
  ctrl.get);
 
 routes.post('/', 
-//  validate(["admin"]),
+ validate(["admin"]),
   ctrl.add);
 
 routes.put('/', 
-//  validate(["admin"]), 
+ validate(["admin"]), 
  ctrl.update);
 
 routes.delete('/:id',
-//  validate(["admin"]), 
+ validate(["admin"]), 
  ctrl.delete);
+
+
 
 module.exports = routes;

@@ -8,7 +8,7 @@ routes.get('/',
 ctrl.getAll);
 
 routes.post('/', 
-validate(["admin"]), 
+// validate(["admin"]), 
 ctrl.add);
 
 routes.put('/', 
@@ -16,7 +16,7 @@ validate(["users","admin"]),
 ctrl.updateUser);
 
 routes.delete('/:id', 
-validate(["admin"]), 
+validate(["admin"]),  
 ctrl.deleteUser);
 
 

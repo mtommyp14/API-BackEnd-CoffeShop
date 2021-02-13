@@ -11,7 +11,6 @@ products.get = async (req, res) => {
     const result = await model.get();
     const saveRedis = JSON.stringify(result)
     redisdb.setex("products", 60, saveRedis)
-    console.log("dari PostGres");
     logger.info('Get data process', res);
     return respon(res, 200, result);
   } catch (error) {
@@ -38,10 +37,8 @@ products.add = async (req, res) => {
 };
 
 products.update = async (req, res) => {
-  // console.log("masuk");
   try {
     if(req.file === undefined){
-      // console.log("masuk try if");
       return respon(res, 500, {msg: "Image harus diisi"})
     }
     const image_url = await cloudUpload(req.file.path)
@@ -49,7 +46,7 @@ products.update = async (req, res) => {
     redisdb.del("products")
     return respon(res, 201, result);
   } catch (error) {
-    // logger.error(error)
+    logger.error(error)
     return respon(res, 200, error);
   }
 };
