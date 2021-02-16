@@ -10,7 +10,7 @@ categories.get = async (req, res) => {
     const result = await model.get();
     return respon(res, 200, result);
   } catch (error) {
-    return respon(res, 200, error);
+    return respon(res, 401, error);
   }
 };
 
@@ -19,7 +19,7 @@ categories.add = async (req, res) => {
     const result = await model.addCategories(req.body);
     return respon(res, 201, result);
   } catch (error) {
-    return respon(res, 200, error);
+    return respon(res, 401, error);
   }
 };
 
@@ -30,9 +30,11 @@ categories.getID = (req, res) => {
 categories.update = async (req, res) => {
   try {
     const result = await model.updateCategories(req.body);
+    console.log(req.body);
+    console.log("masuk");
     return respon(res, 201, result);
   } catch (error) {
-    return respon(res, 200, error);
+    return respon(res, 401, error);
   }
 };
 

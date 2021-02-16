@@ -9,15 +9,13 @@ histories.get = () => new Promise((resolve, reject) => {
   db.query(`
   SELECT 
   id_history,
-  idproduct,
-
-  cashier,
-  ppn,
-  totalprice,
+  invoice, 
+  namehis, 
+  cashier, 
+  ppn, 
+  totalprice, 
   date
   FROM dbhistory
-  INNER JOIN dbproduct ON dbhistory.idproduct = dbproduct.id
-  ORDER BY id_history ASC 
   `)
     .then((res) => {
       if (res.rows.length === 0) {
@@ -34,11 +32,11 @@ histories.get = () => new Promise((resolve, reject) => {
 });
 
 histories.addHistories = (data) => new Promise((resolve, reject) => {
-  db.query(`INSERT INTO public.dbhistory ( cashier, ppn, totalprice, date, idproduct) 
-  VALUES ( ${data.invoice}, '${data.namehis}', '${data.cashier}', ${data.ppn}, ${data.totalprice}, '${data.date}', ${data.idproduct})
-  
+  db.query(`INSERT INTO public.dbhistory (invoice, namehis, cashier, ppn, totalprice, date) 
+  VALUES ( ${data.invoice}, '${data.namehis}', '${data.cashier}', ${data.ppn}, ${data.totalprice}, '${data.date}')
   `)
     .then((res) => {
+      console.log(res);
       resolve(data);
     })
     .catch((err) => {
@@ -48,7 +46,7 @@ histories.addHistories = (data) => new Promise((resolve, reject) => {
 
 histories.updateHistories = (data) => new Promise((resolve, reject) => {
   db.query(`UPDATE public.dbhistory 
-  SET invoice = ${data.invoice}, namehis = '${data.namehis}', cashier = '${data.cashier}', ppn = ${data.ppn}, totalprice = ${data.totalprice}, date = '${data.date}', idproduct = ${data.idproduct} 
+  SET invoice = ${data.invoice}, namehis = '${data.namehis}', cashier = '${data.cashier}', ppn = ${data.ppn}, totalprice = ${data.totalprice}, date = '${data.date}'
   WHERE id_history = ${data.id_history} 
   `)
     .then((res) => {
@@ -60,11 +58,12 @@ histories.updateHistories = (data) => new Promise((resolve, reject) => {
 });
 
 histories.deleteHistories = (id) => new Promise((resolve, reject) => {
-  db.query(`DELETE FROM public.dbhistory WHERE id = ${id_history} `)
+  db.query(`DELETE FROM public.dbhistory WHERE id_history = ${id} `)
     .then((res) => {
-      resolve(data);
+      resolve(res.rows);
     })
     .catch((err) => {
+      console.log(err);
       reject(err);
     });
 });

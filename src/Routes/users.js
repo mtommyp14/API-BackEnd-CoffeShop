@@ -12,7 +12,7 @@ routes.post('/',
 ctrl.add);
 
 routes.put('/', 
-validate(["users","admin"]),
+validate(["admin"]),
 ctrl.updateUser);
 
 routes.delete('/:id', 

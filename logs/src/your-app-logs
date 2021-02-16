@@ -889,3 +889,432 @@ error: terminating connection due to administrator command
 [2021-02-13T04:48:30.089Z] [From Logger Info] info: Token has created
 [2021-02-13T04:48:30.090Z] [From Logger Info] info: Post data berhasil, data cocok
 [2021-02-13T04:50:26.348Z] [From Logger Info] info: Get data process
+[2021-02-13T06:15:30.287Z] [From Logger Info] info: Get data process
+[2021-02-13T06:17:07.459Z] [From Logger Info] info: Get data process
+[2021-02-13T06:21:26.026Z] [From Logger Info] info: Get data process
+[2021-02-13T06:22:29.196Z] [From Logger Info] info: Get data process
+[2021-02-13T06:24:18.958Z] [From Logger Info] info: Get data process
+[2021-02-13T06:28:27.957Z] [From Logger Info] info: Get data process
+[2021-02-13T06:31:55.849Z] [From Logger Info] info: Get data process
+[2021-02-13T06:34:24.727Z] [From Logger Info] info: Get data process
+[2021-02-13T06:35:53.458Z] [From Logger Info] info: Get data process
+[2021-02-13T06:36:59.438Z] [From Logger Info] info: Get data process
+[2021-02-13T06:38:30.250Z] [From Logger Info] info: Get data process
+[2021-02-13T06:45:48.293Z] [From Logger Info] info: Get data process
+[2021-02-13T06:46:50.262Z] [From Logger Info] info: Get data process
+[2021-02-13T06:48:12.868Z] [From Logger Info] info: Get data process
+[2021-02-13T06:49:24.130Z] [From Logger Info] info: Get data process
+[2021-02-13T06:55:48.582Z] [From Logger Info] info: Get data process
+[2021-02-13T06:56:18.419Z] [From Logger Info] info: Post data error Email benar dan password salah
+[2021-02-13T06:56:23.506Z] [From Logger Info] info: Token has created
+[2021-02-13T06:56:23.506Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-13T06:57:04.812Z] [From Logger Info] info: Get data process
+[2021-02-13T06:58:15.893Z] [From Logger Info] info: Get data process
+[2021-02-13T06:58:29.723Z] [From Logger Info] info: Token has created
+[2021-02-13T06:58:29.723Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-13T07:00:27.198Z] [From Logger Info] info: Get data process
+[2021-02-13T07:01:30.904Z] [From Logger Info] info: Get data process
+[2021-02-13T07:07:17.605Z] [From Logger Info] info: Server Run
+[2021-02-13T07:07:17.617Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:07:17.622Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:07:24.810Z] [From Logger Info] info: Get data process
+[2021-02-13T07:07:41.417Z] [From Logger Info] info: Server Run
+[2021-02-13T07:07:41.430Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:07:41.435Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:08:01.656Z] [From Logger Info] info: Server Run
+[2021-02-13T07:08:01.668Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:08:01.673Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:08:11.337Z] [From Logger Info] info: Server Run
+[2021-02-13T07:08:11.350Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:08:11.355Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:10:48.353Z] [From Logger Info] info: Server Run
+[2021-02-13T07:10:48.367Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:10:48.371Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:11:11.852Z] [From Logger Info] info: Server Run
+[2021-02-13T07:11:11.868Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:11:11.873Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:11:23.272Z] [From Logger Info] info: Server Run
+[2021-02-13T07:11:23.284Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:11:23.288Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:11:26.805Z] [From Logger Info] info: Get data process
+[2021-02-13T07:11:48.457Z] [From Logger Info] info: Server Run
+[2021-02-13T07:11:48.469Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:11:48.474Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:15:34.786Z] [From Logger Info] info: Get data process
+[2021-02-13T07:16:57.887Z] [From Logger Info] info: Get data process
+[2021-02-13T07:20:17.685Z] [From Logger Info] info: Server Run
+[2021-02-13T07:20:17.697Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:20:17.702Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:20:22.241Z] [From Logger Info] info: Get data process
+[2021-02-13T07:20:35.057Z] [From Logger Info] info: Server Run
+[2021-02-13T07:20:35.069Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:20:35.074Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:22:00.536Z] [From Logger Info] info: Server Run
+[2021-02-13T07:22:00.548Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:22:00.553Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:22:03.786Z] [From Logger Info] info: Get data process
+[2021-02-13T07:23:00.458Z] [From Logger Info] info: Server Run
+[2021-02-13T07:23:00.468Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:23:00.473Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:23:02.689Z] [From Logger Info] info: Server Run
+[2021-02-13T07:23:02.700Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T07:23:02.706Z] [From Logger Info] info: Database Connected
+[2021-02-13T07:28:40.480Z] [From Logger Info] info: Get data process
+[2021-02-13T07:30:52.890Z] [From Logger Info] info: Get data process
+[2021-02-13T07:31:58.525Z] [From Logger Info] info: Get data process
+[2021-02-13T07:33:56.236Z] [From Logger Info] info: Get data process
+[2021-02-13T07:35:23.636Z] [From Logger Info] info: Get data process
+[2021-02-13T07:36:26.988Z] [From Logger Info] info: Get data process
+[2021-02-13T07:37:54.944Z] [From Logger Info] info: Get data process
+[2021-02-13T07:40:48.811Z] [From Logger Info] info: Get data process
+[2021-02-13T07:41:49.797Z] [From Logger Info] info: Get data process
+[2021-02-13T14:01:28.410Z] [From Logger Info] info: Get data process
+[2021-02-13T14:03:49.752Z] [From Logger Info] info: Get data process
+[2021-02-13T14:20:05.449Z] [From Logger Info] info: Get data process
+[2021-02-13T14:20:52.565Z] [From Logger Info] info: Token has created
+[2021-02-13T14:20:52.565Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-13T14:21:33.545Z] [From Logger Info] info: Server Run
+[2021-02-13T14:21:33.553Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T14:21:33.556Z] [From Logger Info] info: Database Connected
+[2021-02-13T14:25:22.339Z] [From Logger Info] info: Get data process
+[2021-02-13T14:30:18.723Z] [From Logger Info] info: Get data process
+[2021-02-13T14:39:43.004Z] [From Logger Info] info: Get data process
+[2021-02-13T14:51:14.270Z] [From Logger Info] info: Server Run
+[2021-02-13T14:51:14.277Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T14:51:14.280Z] [From Logger Info] info: Database Connected
+[2021-02-13T14:51:52.068Z] [From Logger Info] info: Server Run
+[2021-02-13T14:51:52.076Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T14:51:52.078Z] [From Logger Info] info: Database Connected
+[2021-02-13T14:54:24.786Z] [From Logger Info] info: Server Run
+[2021-02-13T14:54:24.793Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T14:54:24.796Z] [From Logger Info] info: Database Connected
+[2021-02-13T14:56:03.743Z] [From Logger Info] info: Server Run
+[2021-02-13T14:56:03.751Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-13T14:56:03.754Z] [From Logger Info] info: Database Connected
+[2021-02-13T14:56:07.749Z] [From Logger Info] info: Server Run
+[2021-02-13T14:56:07.753Z] [From Logger Info] error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at writeSync (fs.js:711:3)
+    at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at SyncWriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/home/my/Documents/Arkademy/backup10/back/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/my/Documents/Arkademy/backup10/back/node_modules/winston-transport/index.js:82:19)
+    at doWrite (/home/my/Documents/Arkademy/backup10/back/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/my/Documents/Arkademy/backup10/back/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/my/Documents/Arkademy/backup10/back/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/my/Documents/Arkademy/backup10/back/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+[2021-02-14T17:18:01.878Z] [From Logger Info] info: Server Run
+[2021-02-14T17:18:01.889Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-14T17:18:01.892Z] [From Logger Info] info: Database Connected
+[2021-02-14T17:18:35.032Z] [From Logger Info] info: Token has created
+[2021-02-14T17:18:35.032Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-14T17:18:35.106Z] [From Logger Info] info: Get data process
+[2021-02-14T17:21:03.892Z] [From Logger Info] info: Get data process
+[2021-02-14T17:23:14.651Z] [From Logger Info] info: Get data process
+[2021-02-14T17:27:30.997Z] [From Logger Info] info: Get data process
+[2021-02-14T17:38:44.351Z] [From Logger Info] info: Get data process
+[2021-02-14T17:41:03.922Z] [From Logger Info] info: Get data process
+[2021-02-14T17:54:25.388Z] [From Logger Info] info: Get data process
+[2021-02-14T19:15:34.434Z] [From Logger Info] info: Server Run
+[2021-02-14T19:15:34.445Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-14T19:15:34.451Z] [From Logger Info] info: Database Connected
+[2021-02-14T19:16:00.291Z] [From Logger Info] info: Get data process
+[2021-02-15T02:26:53.578Z] [From Logger Info] info: Server Run
+[2021-02-15T02:26:53.591Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-15T02:26:53.603Z] [From Logger Info] info: Database Connected
+[2021-02-15T02:29:59.629Z] [From Logger Info] info: Get data process
+[2021-02-15T02:30:11.026Z] [From Logger Info] info: Post data error Email benar dan password salah
+[2021-02-15T02:30:15.381Z] [From Logger Info] info: Token has created
+[2021-02-15T02:30:15.382Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-15T02:57:11.530Z] [From Logger Info] info: Get data process
+[2021-02-15T03:13:07.928Z] [From Logger Info] info: Get data process
+[2021-02-15T05:59:24.639Z] [From Logger Info] info: Get data process
+[2021-02-15T06:00:24.833Z] [From Logger Info] info: Get data process
+[2021-02-15T06:01:58.715Z] [From Logger Info] info: Get data process
+[2021-02-15T06:03:09.631Z] [From Logger Info] info: Get data process
+[2021-02-15T06:04:43.546Z] [From Logger Info] info: Get data process
+[2021-02-15T06:06:06.614Z] [From Logger Info] info: Get data process
+[2021-02-15T06:14:40.599Z] [From Logger Info] info: Server Run
+[2021-02-15T06:14:40.611Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-15T06:14:40.615Z] [From Logger Info] info: Database Connected
+[2021-02-15T13:07:49.559Z] [From Logger Info] info: Server Run
+[2021-02-15T13:07:49.567Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-15T13:07:49.571Z] [From Logger Info] info: Database Connected
+[2021-02-15T13:08:19.705Z] [From Logger Info] info: Token has created
+[2021-02-15T13:08:19.705Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-15T13:08:19.756Z] [From Logger Info] info: Get data process
+[2021-02-15T13:33:42.004Z] [From Logger Info] info: Get data process
+[2021-02-15T14:05:56.482Z] [From Logger Info] info: Get data process
+[2021-02-15T14:07:37.964Z] [From Logger Info] info: Get data process
+[2021-02-15T14:24:41.268Z] [From Logger Info] info: Get data process
+[2021-02-15T14:29:28.744Z] [From Logger Info] info: Get data process
+[2021-02-15T14:34:17.981Z] [From Logger Info] info: Get data process
+[2021-02-15T14:42:54.102Z] [From Logger Info] info: Get data process
+[2021-02-15T14:49:33.333Z] [From Logger Info] info: Get data process
+[2021-02-15T14:58:10.247Z] [From Logger Info] info: Get data process
+[2021-02-15T15:00:06.766Z] [From Logger Info] info: Get data process
+[2021-02-15T15:04:17.457Z] [From Logger Info] info: Get data process
+[2021-02-15T15:12:46.950Z] [From Logger Info] info: Get data process
+[2021-02-15T15:14:06.839Z] [From Logger Info] info: Get data process
+[2021-02-15T15:15:21.531Z] [From Logger Info] info: Get data process
+[2021-02-15T15:16:52.388Z] [From Logger Info] info: Get data process
+[2021-02-15T15:35:41.423Z] [From Logger Info] info: Get data process
+[2021-02-15T15:41:13.531Z] [From Logger Info] info: Get data process
+[2021-02-15T15:44:06.633Z] [From Logger Info] info: Get data process
+[2021-02-15T15:45:21.966Z] [From Logger Info] info: Get data process
+[2021-02-15T15:52:33.874Z] [From Logger Info] info: Get data process
+[2021-02-15T15:56:46.554Z] [From Logger Info] info: Get data process
+[2021-02-15T16:16:14.518Z] [From Logger Info] info: Get data process
+[2021-02-15T16:22:18.371Z] [From Logger Info] info: Get data process
+[2021-02-15T16:23:53.709Z] [From Logger Info] info: Get data process
+[2021-02-15T16:25:33.118Z] [From Logger Info] info: Get data process
+[2021-02-15T16:27:16.382Z] [From Logger Info] info: Get data process
+[2021-02-15T16:28:34.864Z] [From Logger Info] info: Get data process
+[2021-02-15T16:30:30.134Z] [From Logger Info] info: Get data process
+[2021-02-15T16:34:08.524Z] [From Logger Info] info: Get data process
+[2021-02-15T16:35:19.858Z] [From Logger Info] info: Get data process
+[2021-02-15T16:39:26.235Z] [From Logger Info] info: Get data process
+[2021-02-15T16:41:30.272Z] [From Logger Info] info: Get data process
+[2021-02-15T16:44:48.248Z] [From Logger Info] info: Get data process
+[2021-02-15T16:48:24.961Z] [From Logger Info] info: Get data process
+[2021-02-15T16:49:56.173Z] [From Logger Info] info: Get data process
+[2021-02-15T16:51:36.535Z] [From Logger Info] info: Get data process
+[2021-02-15T16:55:59.911Z] [From Logger Info] info: Get data process
+[2021-02-15T17:00:27.443Z] [From Logger Info] info: Get data process
+[2021-02-15T17:28:45.905Z] [From Logger Info] info: Get data process
+[2021-02-15T17:31:05.400Z] [From Logger Info] info: Get data process
+[2021-02-15T17:33:40.031Z] [From Logger Info] info: Get data process
+[2021-02-15T17:35:46.457Z] [From Logger Info] info: Get data process
+[2021-02-15T17:37:36.355Z] [From Logger Info] info: Get data process
+[2021-02-15T17:42:05.292Z] [From Logger Info] info: Get data process
+[2021-02-16T03:07:52.544Z] [From Logger Info] info: Server Run
+[2021-02-16T03:07:52.556Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T03:07:52.560Z] [From Logger Info] info: Database Connected
+[2021-02-16T03:16:02.302Z] [From Logger Info] info: Token has created
+[2021-02-16T03:16:02.302Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T03:16:02.350Z] [From Logger Info] info: Get data process
+[2021-02-16T03:43:23.983Z] [From Logger Info] info: Get data process
+[2021-02-16T03:50:38.993Z] [From Logger Info] info: Get data process
+[2021-02-16T03:52:26.755Z] [From Logger Info] info: Get data process
+[2021-02-16T04:07:41.682Z] [From Logger Info] info: Get data process
+[2021-02-16T04:17:08.813Z] [From Logger Info] info: Get data process
+[2021-02-16T04:20:19.243Z] [From Logger Info] info: Get data process
+[2021-02-16T05:05:41.720Z] [From Logger Info] info: Get data process
+[2021-02-16T06:04:34.211Z] [From Logger Info] info: Get data process
+[2021-02-16T06:14:19.524Z] [From Logger Info] info: Get data process
+[2021-02-16T06:15:33.368Z] [From Logger Info] info: Get data process
+[2021-02-16T06:17:07.189Z] [From Logger Info] info: Get data process
+[2021-02-16T06:22:22.302Z] [From Logger Info] info: Get data process
+[2021-02-16T06:24:26.556Z] [From Logger Info] info: Get data process
+[2021-02-16T06:37:20.644Z] [From Logger Info] info: Server Run
+[2021-02-16T06:37:20.656Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T06:37:20.662Z] [From Logger Info] info: Database Connected
+[2021-02-16T06:37:42.030Z] [From Logger Info] info: Get data process
+[2021-02-16T06:44:14.608Z] [From Logger Info] info: Get data process
+[2021-02-16T06:51:20.264Z] [From Logger Info] info: Get data process
+[2021-02-16T06:53:23.540Z] [From Logger Info] info: Get data process
+[2021-02-16T06:55:46.338Z] [From Logger Info] info: Get data process
+[2021-02-16T07:20:53.482Z] [From Logger Info] info: Get data process
+[2021-02-16T07:22:37.475Z] [From Logger Info] info: Get data process
+[2021-02-16T07:23:53.537Z] [From Logger Info] info: Get data process
+[2021-02-16T09:19:16.139Z] [From Logger Info] info: Server Run
+[2021-02-16T09:19:16.146Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T09:19:16.149Z] [From Logger Info] info: Database Connected
+[2021-02-16T09:19:35.144Z] [From Logger Info] info: Get data process
+[2021-02-16T09:20:21.794Z] [From Logger Info] info: Token has created
+[2021-02-16T09:20:21.795Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T09:20:35.446Z] [From Logger Info] info: Get data process
+[2021-02-16T09:20:58.351Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:21:01.956Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:21:48.008Z] [From Logger Info] info: Get data process
+[2021-02-16T09:21:53.277Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:25:40.559Z] [From Logger Info] info: Get data process
+[2021-02-16T09:25:44.582Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:25:45.753Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:26:16.842Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:27:58.612Z] [From Logger Info] info: Get data process
+[2021-02-16T09:28:51.934Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:29:46.736Z] [From Logger Info] info: Get data process
+[2021-02-16T09:29:50.987Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:31:52.593Z] [From Logger Info] info: Get data process
+[2021-02-16T09:32:05.507Z] [From Logger Info] info: Get data was rejected cause not your role 
+[2021-02-16T09:32:28.221Z] [From Logger Info] info: Token has created
+[2021-02-16T09:32:28.222Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T09:35:48.422Z] [From Logger Info] info: Get data process
+[2021-02-16T09:37:01.790Z] [From Logger Info] info: Get data process
+[2021-02-16T09:43:42.623Z] [From Logger Info] info: Get data process
+[2021-02-16T09:46:49.767Z] [From Logger Info] info: Get data process
+[2021-02-16T09:49:59.755Z] [From Logger Info] info: Get data process
+[2021-02-16T09:55:40.611Z] [From Logger Info] info: Get data process
+[2021-02-16T09:57:46.938Z] [From Logger Info] info: Get data process
+[2021-02-16T10:01:59.460Z] [From Logger Info] info: Get data process
+[2021-02-16T10:50:40.958Z] [From Logger Info] info: Get data process
+[2021-02-16T10:52:16.071Z] [From Logger Info] info: Get data process
+[2021-02-16T10:54:37.667Z] [From Logger Info] info: Get data process
+[2021-02-16T10:56:34.181Z] [From Logger Info] info: Get data process
+[2021-02-16T11:01:49.644Z] [From Logger Info] info: Get data process
+[2021-02-16T11:03:21.665Z] [From Logger Info] info: Get data process
+[2021-02-16T11:08:35.795Z] [From Logger Info] info: Get data process
+[2021-02-16T11:10:29.051Z] [From Logger Info] info: Get data process
+[2021-02-16T11:12:04.353Z] [From Logger Info] info: Get data process
+[2021-02-16T11:16:04.431Z] [From Logger Info] info: Get data process
+[2021-02-16T11:17:46.740Z] [From Logger Info] info: Get data process
+[2021-02-16T11:20:15.606Z] [From Logger Info] info: Get data process
+[2021-02-16T11:21:32.996Z] [From Logger Info] info: Get data process
+[2021-02-16T11:24:30.873Z] [From Logger Info] info: Get data process
+[2021-02-16T11:27:02.832Z] [From Logger Info] info: Get data process
+[2021-02-16T11:47:00.684Z] [From Logger Info] info: Get data process
+[2021-02-16T11:49:25.340Z] [From Logger Info] info: Get data process
+[2021-02-16T11:53:30.487Z] [From Logger Info] info: Get data process
+[2021-02-16T11:55:22.753Z] [From Logger Info] info: Get data process
+[2021-02-16T11:56:25.103Z] [From Logger Info] info: Get data process
+[2021-02-16T11:57:22.467Z] [From Logger Info] info: Server Run
+[2021-02-16T11:57:22.478Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:57:22.482Z] [From Logger Info] info: Database Connected
+[2021-02-16T11:58:07.961Z] [From Logger Info] info: Server Run
+[2021-02-16T11:58:07.971Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:58:07.975Z] [From Logger Info] info: Database Connected
+[2021-02-16T11:58:39.014Z] [From Logger Info] info: Server Run
+[2021-02-16T11:58:39.024Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:58:39.028Z] [From Logger Info] info: Database Connected
+[2021-02-16T11:58:51.952Z] [From Logger Info] info: Server Run
+[2021-02-16T11:58:51.962Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:58:51.965Z] [From Logger Info] info: Database Connected
+[2021-02-16T11:59:21.855Z] [From Logger Info] info: Server Run
+[2021-02-16T11:59:21.865Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:59:21.868Z] [From Logger Info] info: Database Connected
+[2021-02-16T11:59:23.119Z] [From Logger Info] info: Server Run
+[2021-02-16T11:59:23.128Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:59:23.132Z] [From Logger Info] info: Database Connected
+[2021-02-16T11:59:39.168Z] [From Logger Info] info: Server Run
+[2021-02-16T11:59:39.178Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T11:59:39.181Z] [From Logger Info] info: Database Connected
+[2021-02-16T12:00:08.946Z] [From Logger Info] info: Get data process
+[2021-02-16T12:00:16.666Z] [From Logger Info] info: Token has created
+[2021-02-16T12:00:16.666Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T12:01:46.869Z] [From Logger Info] info: Server Run
+[2021-02-16T12:01:46.879Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T12:01:46.882Z] [From Logger Info] info: Database Connected
+[2021-02-16T12:02:01.022Z] [From Logger Info] info: Get data process
+[2021-02-16T12:03:08.841Z] [From Logger Info] info: Server Run
+[2021-02-16T12:03:08.850Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T12:03:08.854Z] [From Logger Info] info: Database Connected
+[2021-02-16T12:06:37.286Z] [From Logger Info] info: Get data process
+[2021-02-16T12:13:30.182Z] [From Logger Info] info: Get data process
+[2021-02-16T12:15:40.094Z] [From Logger Info] info: Server Run
+[2021-02-16T12:15:40.104Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T12:15:40.108Z] [From Logger Info] info: Database Connected
+[2021-02-16T12:17:04.817Z] [From Logger Info] info: Get data process
+[2021-02-16T12:18:17.224Z] [From Logger Info] info: Get data process
+[2021-02-16T12:19:44.087Z] [From Logger Info] info: Server Run
+[2021-02-16T12:19:44.097Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T12:19:44.100Z] [From Logger Info] info: Database Connected
+[2021-02-16T12:20:13.842Z] [From Logger Info] info: Server Run
+[2021-02-16T12:20:13.852Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T12:20:13.856Z] [From Logger Info] info: Database Connected
+[2021-02-16T13:23:39.073Z] [From Logger Info] info: Server Run
+[2021-02-16T13:23:39.081Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T13:23:39.084Z] [From Logger Info] info: Database Connected
+[2021-02-16T13:24:48.125Z] [From Logger Info] info: Get data process
+[2021-02-16T13:48:55.079Z] [From Logger Info] info: Get data process
+[2021-02-16T13:49:57.108Z] [From Logger Info] info: Token has created
+[2021-02-16T13:49:57.108Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T13:49:57.136Z] [From Logger Info] info: Get data process
+[2021-02-16T13:54:01.710Z] [From Logger Info] info: Server Run
+[2021-02-16T13:54:01.718Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T13:54:01.721Z] [From Logger Info] info: Database Connected
+[2021-02-16T13:59:06.334Z] [From Logger Info] info: Token has created
+[2021-02-16T13:59:06.335Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T13:59:06.371Z] [From Logger Info] info: Get data process
+[2021-02-16T14:03:19.477Z] [From Logger Info] info: Token has created
+[2021-02-16T14:03:19.478Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T14:03:19.518Z] [From Logger Info] info: Get data process
+[2021-02-16T14:04:22.881Z] [From Logger Info] info: Server Run
+[2021-02-16T14:04:22.889Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:04:22.892Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:04:35.835Z] [From Logger Info] info: Token has created
+[2021-02-16T14:04:35.835Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T14:04:35.877Z] [From Logger Info] info: Get data process
+[2021-02-16T14:04:43.893Z] [From Logger Info] info: Server Run
+[2021-02-16T14:04:43.901Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:04:43.904Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:16:58.914Z] [From Logger Info] info: Server Run
+[2021-02-16T14:16:58.922Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:16:58.925Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:17:10.656Z] [From Logger Info] info: Token has created
+[2021-02-16T14:17:10.657Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T14:17:10.696Z] [From Logger Info] info: Get data process
+[2021-02-16T14:18:44.091Z] [From Logger Info] info: Server Run
+[2021-02-16T14:18:44.098Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:18:44.102Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:20:32.817Z] [From Logger Info] info: Server Run
+[2021-02-16T14:20:32.824Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:20:32.827Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:21:19.967Z] [From Logger Info] info: Server Run
+[2021-02-16T14:21:19.974Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:21:19.978Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:21:37.513Z] [From Logger Info] info: Server Run
+[2021-02-16T14:21:37.520Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:21:37.525Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:21:50.000Z] [From Logger Info] info: Server Run
+[2021-02-16T14:21:50.006Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:21:50.009Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:22:05.153Z] [From Logger Info] info: Server Run
+[2021-02-16T14:22:05.161Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:22:05.164Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:22:33.131Z] [From Logger Info] info: Server Run
+[2021-02-16T14:22:33.139Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:22:33.142Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:22:42.849Z] [From Logger Info] info: Server Run
+[2021-02-16T14:22:42.856Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:22:42.859Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:22:54.296Z] [From Logger Info] info: Server Run
+[2021-02-16T14:22:54.304Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:22:54.308Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:23:33.475Z] [From Logger Info] info: Server Run
+[2021-02-16T14:23:33.483Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:23:33.485Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:24:13.490Z] [From Logger Info] info: Server Run
+[2021-02-16T14:24:13.497Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:24:13.500Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:24:19.085Z] [From Logger Info] info: Server Run
+[2021-02-16T14:24:19.092Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:24:19.095Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:27:23.664Z] [From Logger Info] info: Server Run
+[2021-02-16T14:27:23.671Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:27:23.674Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:28:18.347Z] [From Logger Info] info: Token has created
+[2021-02-16T14:28:18.348Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T14:28:18.394Z] [From Logger Info] info: Get data process
+[2021-02-16T14:29:48.782Z] [From Logger Info] info: Server Run
+[2021-02-16T14:29:48.789Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:29:48.792Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:29:56.962Z] [From Logger Info] info: Server Run
+[2021-02-16T14:29:56.969Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:29:56.972Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:30:11.674Z] [From Logger Info] info: Token has created
+[2021-02-16T14:30:11.675Z] [From Logger Info] info: Post data berhasil, data cocok
+[2021-02-16T14:30:11.728Z] [From Logger Info] info: Get data process
+[2021-02-16T14:30:44.899Z] [From Logger Info] info: Server Run
+[2021-02-16T14:30:44.907Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:30:44.910Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:35:48.724Z] [From Logger Info] info: Server Run
+[2021-02-16T14:35:48.732Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:35:48.734Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:36:01.278Z] [From Logger Info] info: Server Run
+[2021-02-16T14:36:01.285Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:36:01.288Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:36:08.188Z] [From Logger Info] info: Server Run
+[2021-02-16T14:36:08.195Z] [From Logger Info] info: Connection to Redis Ok
+[2021-02-16T14:36:08.197Z] [From Logger Info] info: Database Connected
+[2021-02-16T14:38:30.378Z] [From Logger Info] info: Get data process
+[2021-02-16T14:38:45.617Z] [From Logger Info] info: Get data process
+[2021-02-16T14:42:54.513Z] [From Logger Info] info: Get data process
+[2021-02-16T14:46:46.025Z] [From Logger Info] info: Get data process
+[2021-02-16T14:51:52.066Z] [From Logger Info] info: Get data process
+[2021-02-16T15:01:13.963Z] [From Logger Info] info: Get data process
+[2021-02-16T15:02:19.861Z] [From Logger Info] info: Get data process
+[2021-02-16T15:17:57.458Z] [From Logger Info] info: Get data process
+[2021-02-16T15:21:29.201Z] [From Logger Info] info: Get data process
+[2021-02-16T15:22:36.288Z] [From Logger Info] info: Get data process

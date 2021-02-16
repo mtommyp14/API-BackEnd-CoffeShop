@@ -24,7 +24,7 @@ class Users {
     } catch (error) {
       return respon(res, 500, error);
     }
-  }
+  };
 
   async getAll(req, res) {
     try {
@@ -33,7 +33,7 @@ class Users {
     } catch (error) {
       return respon(res, 500, error);
     }
-  }
+  };
 
   async updateUser(req, res){
     try {
@@ -42,7 +42,7 @@ class Users {
     } catch (error) {
       return respon(res, 500, error)
     }
-  }
+  };
 
   async deleteUser(req, res){
     try {

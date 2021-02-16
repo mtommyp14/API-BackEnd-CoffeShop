@@ -7,7 +7,7 @@ histories.get = async (req, res) => {
     const result = await model.get();
     return respon(res, 200, result);
   } catch (error) {
-    return respon(res, 200, error);
+    return respon(res, 401, error);
   }
 };
 
@@ -16,7 +16,7 @@ histories.add = async (req, res) => {
     const result = await model.addHistories(req.body);
     return respon(res, 201, result);
   } catch (error) {
-    return respon(res, 200, error);
+    return respon(res, 401, error);
   }
 };
 

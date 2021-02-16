@@ -29,7 +29,7 @@ categories.addCategories = (data) => new Promise((resolve, reject) => {
 });
 
 categories.updateCategories = (data) => new Promise((resolve, reject) => {
-  db.query(`UPDATE public.dbcategory SET type='${data.type}' WHERE id= ${data.id} `)
+  db.query(`UPDATE public.dbcategory SET type='${data.type}' WHERE id_category =${data.id} `)
     .then((res) => {
       resolve(data);
     })
