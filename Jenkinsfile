@@ -18,7 +18,7 @@ pipeline{
         stage("Install dependencies"){
 
             steps{
-                nodejs("node14 back"){
+                nodejs("node14"){
                     sh 'npm install'
                 }
             }
@@ -82,7 +82,7 @@ pipeline{
                                     sshTransfer(
                                         sourceFiles: 'docker-compose.yml',
                                         remoteDirectory: 'app',
-                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 7070:9001 ${images_name}",
+                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 9291:9291 ${images_name}",
                                         execTimeout: 1200000
                                     )
                                 ]
@@ -110,7 +110,7 @@ pipeline{
                                     sshTransfer(
                                         sourceFiles: 'docker-compose.yml',
                                         remoteDirectory: 'app',
-                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 7070:9001 ${images_name}",
+                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 9291:9291 ${images_name}",
                                         execTimeout: 1200000
                                     )
                                 ]

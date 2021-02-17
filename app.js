@@ -30,6 +30,6 @@ redis.redisCheck()
   .then(res=>{logger.info(res);})
   .catch(err=>{logger.info(err);})
   
-server.listen(9000, () => {
+server.listen(9291, () => {
   logger.info('Server Run');
 });

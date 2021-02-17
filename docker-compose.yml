@@ -43,32 +43,32 @@ services:
     depends_on: 
       - postgres
 
-  # nodejs: 
-  #   image: backend:nodejs
-  #   restart: always
-  #   ports: 
-  #     - 9001-9003:9000
-  #   env_file: 
-  #     - ./back/.env
-  #   deploy:
-  #     mode: replicated
-  #     replicas: 2
-  #     resources:
-  #       limits:
-  #         cpus: "0.50"
-  #         memory: 50M
-  #       reservations:
-  #         cpus: "0.25"
-  #         memory: 20M
-  #   networks: 
-  #     - devopsnet
-  #   environment:
-  #     DATABASE_URL: "postgres://tommy14:postgres14@postgres:5151/api"
-  #   links:
-  #     - redis
-  #   depends_on: 
-  #     - postgres
-  #     - pgadmin
+  nodejs: 
+    image: backend:nodejs
+    restart: always
+    ports: 
+      - 9291-9294:9291
+    env_file: 
+      - ./back/.env
+    deploy:
+      mode: replicated
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 50M
+        reservations:
+          cpus: "0.25"
+          memory: 20M
+    networks: 
+      - devopsnet
+    environment:
+      DATABASE_URL: "postgres://tommy14:postgres14@postgres:5151/api"
+    links:
+      - redis
+    depends_on: 
+      - postgres
+      - pgadmin
 
 networks: 
   devopsnet:
