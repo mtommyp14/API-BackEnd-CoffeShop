@@ -1,20 +1,20 @@
 version: '3.7'
 
 services: 
-  postgres:
-    container_name: postgres
-    image: postgres:13.1
-    restart: always
-    ports: 
-      - "5432:5432"
-    volumes: 
-      - ./pgdata:/var/lib/postgresql/data
-    networks: 
-      - devopsnet
-    environment: 
-      - POSTGRES_PASSWORD=postgres14
-      - POSTGRES_USER=tommy14
-      - POSTGRES_DB=product
+  # postgres:
+  #   container_name: postgres
+  #   image: postgres:13.1
+  #   restart: always
+  #   ports: 
+  #     - "5432:5432"
+  #   volumes: 
+  #     - ./pgdata:/var/lib/postgresql/data
+  #   networks: 
+  #     - devopsnet
+  #   environment: 
+  #     - POSTGRES_PASSWORD=postgres14
+  #     - POSTGRES_USER=tommy14
+  #     - POSTGRES_DB=product
   
   # pgadmin:
   #   container_name: pgadmin
@@ -30,18 +30,18 @@ services:
   #   depends_on: 
   #     - postgres
 
-  redis:
-    container_name: redis
-    image: redis:alpine
-    restart: always
-    ports:
-      - "6379:6379"
-    volumes:
-      - ./redis.conf:/usr/local/etc/redis/redis.conf
-    networks: 
-      - devopsnet
-    depends_on: 
-      - postgres
+  # redis:
+  #   container_name: redis
+  #   image: redis:latest
+  #   restart: always
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - ./redis.conf:/usr/local/etc/redis/redis.conf
+  #   networks: 
+  #     - devopsnet
+  #   depends_on: 
+  #     - postgres
 
   nodejs: 
     image: backend:nodejs

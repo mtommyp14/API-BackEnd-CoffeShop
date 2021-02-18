@@ -76,13 +76,13 @@ pipeline{
                     sshPublisher(
                         publishers: [
                             sshPublisherDesc(
-                                configName: 'backend-server',
+                                configName: 'coffeshop',
                                 verbose: false,
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'docker-compose.yml',
                                         remoteDirectory: 'app',
-                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 9291:9291 ${images_name}",
+                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name backend -p 9291:9291 ${images_name}",
                                         execTimeout: 1200000
                                     )
                                 ]
@@ -104,13 +104,13 @@ pipeline{
                     sshPublisher(
                         publishers: [
                             sshPublisherDesc(
-                                configName: 'backend-server',
+                                configName: 'coffeshop',
                                 verbose: false,
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'docker-compose.yml',
                                         remoteDirectory: 'app',
-                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name frontendVue -p 9291:9291 ${images_name}",
+                                        execCommand: "docker pull ${images_name}; docker kill backend; docker run -d --rm --name backend -p 9291:9291 ${images_name}",
                                         execTimeout: 1200000
                                     )
                                 ]
