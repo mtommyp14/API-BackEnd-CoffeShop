@@ -18,7 +18,7 @@ pipeline{
         stage("Install dependencies"){
 
             steps{
-                nodejs("node14"){
+                nodejs("node14_back"){
                     sh 'npm install'
                 }
             }
@@ -36,6 +36,7 @@ pipeline{
                 }
             }
         }
+
 
         stage("Build Docker - Production"){
             when {

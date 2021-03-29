@@ -44,7 +44,7 @@ services:
     #   - postgres
 
   nodejs: 
-    image: backend:nodejs
+    image: mtommyp14/back:main
     restart: always
     ports: 
       - 9291-9294:9291
